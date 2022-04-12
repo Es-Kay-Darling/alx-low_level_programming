@@ -1,23 +1,19 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - entry point
+ * main - Entry point
  *
- * Description: Print the lower and upper alphabets on the same line
- * Return: 0
+ * Return: always 0 (success/correct)
  */
 int main(void)
 {
-int c;
-char low;
+	char lower_case;
+	char upper_case;
+	for (upper_case = 'A'; upper_case <= 'z'; upper_case++)
+	{
+		puchar(lower_case)
+	}
 
-for (low = 'a'; low <= 'z'; low++)
-	putchar(low);
-for (low = 'A'; low <= 'z'; low++)
-	putchar(low);
 	putchar('\n');
 
-return (0);
+	return (0);
 }
