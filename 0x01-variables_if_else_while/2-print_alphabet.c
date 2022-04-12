@@ -1,21 +1,23 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+#include <stdio.h>
 /**
- * main - entry point
+ * main  entry point
  *
- * Description: Print the lowercase alphabet
- * Return: 0
+ * Retunr: Always 0 (Success/correct)
  */
 int main(void)
 {
-int n;
-char low;
+	char alphabet;
 
-for (low = 'a'; low <= 'z'; low++)
-	putchar(low);
-	printf("\n");
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+	{
+		putchar(alphabet);
+	}
 
-return (0);
+	putchar('\n');
+
+	return (0);
 }
+
+
