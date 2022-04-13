@@ -9,17 +9,10 @@
  */
 int main(void)
 {
-	char low, e, q;
+	int i;
 
-	e = 'e';
-	q = 'q';
-
-	for (low = 'a'; low <= 'z'; low++)
-	{
-		if (low != e && low != q)
-			putchar(low);
-	}
+	for (i = 0; i < 10; i++)
+		printf("%d", i);
 		printf("\n");
-
 	return (0);
 }
