@@ -7,12 +7,17 @@
  *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int i;
+	char n;
 
-	for (i = 0; i < 10; i++)
-		printf("%d", i);
-		printf("\n");
+	for (n = '0'; n <= '9'; n++)
+	{
+		putchar(n);
+	}
+
+	putchar('\n');
+
 	return (0);
 }
