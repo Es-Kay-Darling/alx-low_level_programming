@@ -15,7 +15,7 @@ int main(void)
 		printf("%c", rand_passwd);
 		total -= rand_passwd;
 	}
-	print("%c", total);
+	printf("%c", total);
 
 	return (0);
 }
