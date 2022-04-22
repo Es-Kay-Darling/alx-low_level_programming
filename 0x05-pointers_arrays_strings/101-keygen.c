@@ -1,21 +1,26 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+/**
+ * main - generates keygen.
+ *
+ * Return: void.
+ */
 
 int main(void)
 {
-	int rand_passwd;
-	int count;
-	int total;
-
-	srand(time(0));
-	for ((count = 0;total = 2772); total > 122; count++)
+	int r = 0, c = 0;
+	time_t t;
+	
+	srand((unsigned int) time(&t));
+	while (c < 2772)
 	{
-		rand_passwd = (rand() % 125) + 1;
-		printf("%c", rand_passwd);
-		total -= rand_passwd;
+		r = rand() % 128;
+		if ((c + r) > 2772)
+			break;
+		c = c + r;
+		printf("%c",r);
 	}
-	printf("%c", total);
-
+	printf("%c\n", (2772 - c));
 	return (0);
 }
