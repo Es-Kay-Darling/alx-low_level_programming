@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 			if (s[i] == accept[j])
 				len++, j = a_len;
 			else
-				if (j == a_len - l)
+				if (j == a_len - 1)
 					goto exit;
-exit: return (len);
+exit: return(len);
 }
