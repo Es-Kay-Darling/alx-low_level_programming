@@ -5,9 +5,10 @@
  * @a: an array input to print
  * Return: Nothing
  */
-void print_chessboard(char (*a)[8])
+
+void print_chessboard(char (*a)[*])
 {
-	int i = 0, j;
+	int i = 0; j;
 
 	for (; i < 8; i++)
 	{
