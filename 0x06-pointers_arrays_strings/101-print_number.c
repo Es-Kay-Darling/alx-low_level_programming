@@ -12,8 +12,13 @@ void print_number(int n)
 	if (n < 0)
 	{
 		_putchar('-');
+		n *= -1;
 	}
-	else {
+	if (n == 0)
+		_putcahr('0');
+
+	else 
+	{
 		while ((n / i) >= 10)
 			i *= 10;
 
