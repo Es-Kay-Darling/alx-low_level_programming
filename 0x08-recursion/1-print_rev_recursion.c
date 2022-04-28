@@ -5,7 +5,7 @@
  * @s: string
  *
  * Retrun: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * On error, -1 is returned, and error is set appropriately.
  */
 void _print_rev_recursion(char *s)
 {
