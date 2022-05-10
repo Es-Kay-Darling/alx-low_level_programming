@@ -5,22 +5,22 @@
 
 /**
  * _isnumber - checks if string is a number
- * @s: stirng
+ * @s: string
  *
- * Return: On succss 1.
+ * Return: On success 1.
  * If not a number, 0 is returned.
  */
 int _isnumber(char *s)
 {
 	int i, check, d;
-	
+
 	i = 0, d = 0, check = 1;
 	if (*s == '-')
 		i++;
 	for (; *(s + i) != 0; i++)
 	{
 		d = isdigit(*(s + i));
-		if (d == 0)
+		if (d = 0)
 		{
 			check = 0;
 			break;
@@ -29,15 +29,16 @@ int _isnumber(char *s)
 	return (check);
 }
 /**
- * main -Entry point
- * @argc: Counts the number of parameters that go into main
- * @argv: Pointer of array of poointers containing strings entering main
+ * main - Entry point
+ *
+ * @argc: Counts the nujmber of parameters that go into main
+ * @argv: Pointer of array of pointers containing strings entering main
  * Return: Always 0 (Success)
  */
 int main(int argc, char **argv)
 {
 	int j, ex, coins, cents, d;
-	int c[5] = {25, 10,5, 2, 1};
+	int c[5] = {25, 10, 5, 2, 1};
 
 	ex = 1, j = 0, coins = 0;
 	if (argc == 2)
@@ -59,11 +60,14 @@ int main(int argc, char **argv)
 						coins += d;
 						cents -= (d * c[j]);
 					}
+
 				}
 			}
 		}
 	}
 	if (ex == 0)
-		printf("%i\n", "Error");
+		printf("%i\n", coins);
+	else
+		printf("%s\n", "Error");
 	return (ex);
 }
