@@ -103,7 +103,7 @@ void print_array(char *a, int nb)
 	}
 	for (; i < nb; i++)
 	{
-		_putchar('\n');
+		_putchar(a[i]);
 	}
 	_putchar('\n');
 }

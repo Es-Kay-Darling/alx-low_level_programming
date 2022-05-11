@@ -3,7 +3,7 @@
 
 /**
  * malloc_checked - allocate memory.
- * @b: aize of the memory to be allocated.
+ * @b: size of the memory to be allocated.
  * Return: pointer;
  */
 
@@ -15,7 +15,7 @@ void *malloc_checked(unsigned int b)
 	if (p == NULL)
 	{
 		exit(98);
-		return (NULL)
+		return (NULL);
 	}
 	return (p);
 }
