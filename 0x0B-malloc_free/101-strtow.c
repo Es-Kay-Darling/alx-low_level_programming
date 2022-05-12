@@ -42,7 +42,7 @@ char *_trspace(char *st)
  *
  * Return: Double Pointer
  */
-char *strstow(char *str)
+char *strtow(char *str)
 {
 	char **s, *ts;
 	int l, l2, wc, i, j, fr, k;
