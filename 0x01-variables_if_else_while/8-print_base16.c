@@ -1,22 +1,27 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
 /**
- * main -Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: always return 0
+ *
  */
-
 int main(void)
 {
+	unsigned char a = '0';
+	int i;
 
-	char c;
-	for (c = '0'; c <= '9'; c++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(c);
+		putchar(a);
+		a++;
+
 	}
-
+	a = '1';
+	for (i = 0; i < 6; i++)
+	{
+		putchar('0' + a);
+		a++;
+	}
 	putchar('\n');
-
 	return (0);
 }
