@@ -1,19 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
- * main  entry point
+ * main - entry point
  *
- * Retunr: Always 0 (Success/correct)
+ * Return: alway returns 0
+ *
  */
-
 int main(void)
 {
-	char c;
+	char a;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-
+	for (a = 'a'; a <= 'z' ; a++)
+		putchar(a);
 	putchar('\n');
 	return (0);
 }

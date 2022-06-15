@@ -1,23 +1,16 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 /**
- * main - Entry point
+ * main - entry point
  *
- * Return: Always 0 (Success)
+ * Return: alway returns 0
+ *
  */
-
 int main(void)
 {
-	int n;
+	int a = 0;
 
-	for (n = '0'; n <= '9'; n++)
-	{
-		putchar(n);
-	}
-	
+	for (; a < 10 ; a++)
+		putchar('0' + a);
 	putchar('\n');
-
 	return (0);
 }
