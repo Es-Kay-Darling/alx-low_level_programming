@@ -1,31 +1,29 @@
 #include "main.h"
 
 /**
- * rot13 - encoding a string using rot13.
- * @s: the string to be encoded to rot13.
- * Return: the sring s encoded to rot13.
+ * rot13 - encodes a string in rot13
+ * @s: string to be encoded
+ *
+ * Return: the resulting string
  */
-
 char *rot13(char *s)
 {
-	int i = 0, j = 0;
-	char string_rot13[] = "NnOoPpQqRrSsTtUuVvWwXxYyZzAaBbCcDdEeFfGgHhIiJjKkLlMm";
-	char string_alpha[] = "AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz";
+	int i, j;
 
-	while (s[i] != '\0')
+	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		do{
-			if (s[i] == string_alpha[j])
+		for (j = 0; a[j] != '\0'; j++)
+		{
+			if (s[i] == a[j])
 			{
-				s[i] = string_rot13[j];
+				s[i] = b[j];
 				break;
 			}
-			j++;
-		}while (sting_alpha[j] != '\0');
-		j = 0;
-		i++;
+		}
 	}
 
 	return (s);
 }
-
